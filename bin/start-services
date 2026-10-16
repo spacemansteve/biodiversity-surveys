@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+source "$ROOT/env.sh"
+
+if ! colima status >/dev/null 2>&1; then
+  colima start --arch aarch64 --vm-type vz --vz-rosetta --cpu 4 --memory 10 --disk 80
+fi
+
+make -C "$ROOT/web" services

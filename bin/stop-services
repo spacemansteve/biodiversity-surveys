@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+source "$ROOT/env.sh"
+
+docker compose -f "$ROOT/web/docker-compose.yml" -f "$ROOT/web/docker-compose.override.yml" stop
