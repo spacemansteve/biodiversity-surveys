@@ -36,6 +36,15 @@ and consequences.
 - [Separate workspace repository](decisions/002-workspace-repository.md)
   — repository boundaries, documentation ownership, and local artifacts.
 
+## Point-count pilot
+
+- [Baseline and pilot validation](engineering/point-count-pilot-validation.md)
+
+- [Approved protocol and local walkthrough](https://github.com/spacemansteve/inaturalist/blob/feature/survey-schema-v0.2/docs/protocols/stationary-bird-point-count-v1.md)
+- [Private workflow decision](https://github.com/spacemansteve/inaturalist/blob/feature/survey-schema-v0.2/docs/decisions/002-private-point-count-workflow.md)
+
+The protocol and workflow decision live in the web fork, under `web/docs/` locally.
+
 ## Survey backend
 
 - [Schema and lifecycle](https://github.com/spacemansteve/inaturalist/blob/feature/survey-schema-v0.2/docs/survey_schema.md)
